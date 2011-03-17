@@ -1,0 +1,10 @@
+[user]
+  name = Christopher Mckay
+  email = potatohead@potatolan.com
+[color]
+  status = auto
+  branch = auto
+  diff = auto
+[github]
+  user = Potatohead
+  token = 12345
