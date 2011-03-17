@@ -1,6 +1,6 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:Potatohead/config-vim.git
-[submodule "emacs"]
-	path = emacs
+[submodule "emacs.d"]
+	path = emacs.d
 	url = git@github.com:Potatohead/config-emacs.git
