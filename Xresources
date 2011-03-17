@@ -1,0 +1,7 @@
+Emacs.background: black
+Emacs.foreground: grey80
+URxvt.background: black
+URxvt.foreground: grey80
+URxvt.scrollBar: false
+URxvt.perl-ext-common: default
+URxvt.fading: 10
