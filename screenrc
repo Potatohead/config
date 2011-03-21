@@ -1,0 +1,13 @@
+bindkey -k F1 prev
+bindkey -k F2 next
+
+startup_message off
+
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+termcap  xterm 'AF=\E[3%dm:AB=\E[4%dm'
+terminfo xterm 'AF=\E[3%p1%dm:AB=\E[4%p1%dm'
+termcapinfo xterm ti@:te@ 
+
+
