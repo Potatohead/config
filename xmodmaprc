@@ -1,4 +1,6 @@
 clear Lock
-clear control
+clear Control
+clear Mod1
 
-add control = Control_L Control_R Caps_Lock
+add Control = Control_R Caps_Lock Alt_L
+add Mod1 = Control_L Alt_R

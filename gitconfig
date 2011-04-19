@@ -1,6 +1,8 @@
 [user]
   name = Christopher Mckay
   email = potatohead@potatolan.com
+[merge]
+	tool = vimdiff
 [color]
   status = auto
   branch = auto
