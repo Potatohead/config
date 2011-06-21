@@ -11,3 +11,5 @@
 [github]
   user = Potatohead
   token = 12345
+[push]
+	default = matching
