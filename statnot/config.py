@@ -31,7 +31,11 @@ QUEUE_NOTIFICATIONS=True
 import subprocess
 def update_text(text):
     import os
-    file = open("%s/.statnot/notification" % os.getenv("HOME"), 'w')
+    try:
+        os.mkfifo("%s/.statnot/notification.pipe" % os.getenv("HOME"))
+    except OSError, e:
+        1    
+    file = open("%s/.statnot/notification.pipe" % os.getenv("HOME"), 'w')
     file.write(text);
     file.close;
     # Get first line
