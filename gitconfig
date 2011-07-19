@@ -1,15 +1,29 @@
 [user]
   name = Christopher Mckay
   email = potatohead@potatolan.com
-[merge]
-	tool = vimdiff
+[push]
+  default = matching
 [color]
+  ui = auto
+  diff = auto
   status = auto
   branch = auto
-  diff = auto
   interactive = auto
+[pager]
+  status = true
+  show-branch = true
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+[merge]
+  tool = vimdiff
 [github]
   user = Potatohead
   token = 12345
-[push]
-	default = matching
+[format]
+  numbered = auto
+[core]
+  legacyheaders = false
+[repack]
+  usedeltabaseoffset = true
