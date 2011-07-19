@@ -3,5 +3,5 @@ if [ $# -eq 0 ]; then
   #echo "[load ${loadavg}]   `date +'%R'`";
   echo "${loadavg}";
 else
-  echo "<fc=#FF9999>$1</fc>";
+  echo "<fc=#FFFF00>$1</fc>";
 fi
