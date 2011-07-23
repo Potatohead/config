@@ -27,6 +27,17 @@ my @files = (
       'xsessions',
       'xmonad-extended.desktop'
     ),
+  },
+  {
+    original => $dotdir->file('statnot', 'statnot'),
+    dest => Path::Class::File->new(
+      '/',
+      'usr',
+      'local',
+      'bin',
+      'statnot'
+    ),
+    perm => '0755',
   }
 );
 
@@ -37,7 +48,7 @@ foreach  my $file (@files)
   given ($file->{dest}) {
     when ( -l $_ ) {
       my $link = file(readlink $_);
-      if ($link->absolute ne $_->absolute) {
+      unless ($link->absolute eq $file->{original}) {
         say {*STDERR} "warning: destination link '$_' exists, ".
           "but points to the wrong place. (should point to $file->{original}, ".
           "points to $link).";
@@ -52,4 +63,7 @@ foreach  my $file (@files)
   say "linking $file->{original} to $file->{dest}";
   symlink $file->{original}, $file->{dest} 
     or say {*STDERR} "Error linking $file->{original} to $file->{dest}: $!";
+  if ($file->{perm}) {
+    chmod $file->{perm}, $file->{dest};
+  }
 }
