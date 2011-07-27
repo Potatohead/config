@@ -63,7 +63,7 @@ foreach  my $file (@files)
   say "linking $file->{original} to $file->{dest}";
   symlink $file->{original}, $file->{dest} 
     or say {*STDERR} "Error linking $file->{original} to $file->{dest}: $!";
-  if ($file->{perm}) {
-    chmod $file->{perm}, $file->{dest};
-  }
+  #if ($file->{perm}) {
+  #  chmod $file->{perm}, $file->{dest};
+  #}
 }
