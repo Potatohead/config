@@ -2,7 +2,7 @@
 DEFAULT_NOTIFY_TIMEOUT = 30000 # milliseconds
 
 # Maximum time a notification is allowed to show
-MAX_NOTIFY_TIMEOUT = 60000 # milliseconds
+MAX_NOTIFY_TIMEOUT = 30000 # milliseconds
 
 # Maximum number of characters in a notification. 
 NOTIFICATION_MAX_LENGTH = 100 # number of characters
