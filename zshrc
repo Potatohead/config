@@ -31,6 +31,7 @@ source $HOME/perl5/perlbrew/etc/bashrc
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export EDITOR=/usr/bin/vim
+export PERL_AUTOINSTALL=--alldeps
 
 # This line makes emacs launch the client instead. The alternate-editor bit is a
 # bit of magic that makes the client launch an emacs daemon if one isn't
