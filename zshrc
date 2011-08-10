@@ -21,16 +21,16 @@ ZSH_THEME="juanghurtado"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(command-not-found git cpanm deb dirpersist extract git perl ruby rvm ssh-agent svn)
+plugins=(git cpanm deb dirpersist extract git perl ruby rvm ssh-agent svn)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-source $HOME/perl5/perlbrew/etc/bashrc
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source $HOME/perl5/perlbrew/etc/bashrc
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export EDITOR=/usr/bin/vim
+export EDITOR=vim
 export PERL_AUTOINSTALL=--alldeps
 
 # This line makes emacs launch the client instead. The alternate-editor bit is a
