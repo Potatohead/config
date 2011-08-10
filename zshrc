@@ -36,7 +36,7 @@ export PERL_AUTOINSTALL=--alldeps
 # This line makes emacs launch the client instead. The alternate-editor bit is a
 # bit of magic that makes the client launch an emacs daemon if one isn't
 # running. Just remember that daemon stays running
-alias emacs='TERM=rxvt-256color emacsclient --alternate-editor="" -nw'
+alias em='TERM=rxvt-256color emacsclient --alternate-editor="" -nw'
 #
 # This alias is a convenience to access plain emacs
-alias emacs-ns='TERM=rxvt-256color /usr/bin/emacs -nw'
+alias em-ns='TERM=rxvt-256color emacs -nw'
