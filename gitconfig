@@ -20,7 +20,6 @@
   tool = vimdiff
 [github]
   user = Potatohead
-  token = 12345
 [format]
   numbered = auto
 [core]
