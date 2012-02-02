@@ -30,6 +30,8 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && . "$HOME/.scm_breeze/scm_breeze.sh"
+
 export EDITOR=vim
 export PERL_AUTOINSTALL=--alldeps
 
@@ -40,3 +42,4 @@ alias em='TERM=rxvt-256color emacsclient --alternate-editor="" -nw'
 #
 # This alias is a convenience to access plain emacs
 alias em-ns='TERM=rxvt-256color emacs -nw'
+
