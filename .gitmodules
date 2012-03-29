@@ -10,3 +10,6 @@
 [submodule "emacs.d"]
 	path = emacs.d
 	url = https://github.com/Potatohead/config-emacs.git
+[submodule "scm_breeze"]
+	path = scm_breeze
+	url = git://github.com/ndbroadbent/scm_breeze.git
